@@ -23,7 +23,7 @@ Create User
 
   {% for field in form if field.widget.input_type != 'hidden' %}
 
-  <div class="form-group row">
+  <div class="form-group row mt-1">
     {{field.label(class="col-sm-2 col-form-label")}}
     <div class="col-sm-10">
       {{field(class="form-control")}}
@@ -32,7 +32,7 @@ Create User
 
   {% endfor %}
 
-  <button class="btn btn-primary">Login!</button>
+  <button class="btn btn-primary mt-5">Login!</button>
 </form>
 
 {% endblock %}
